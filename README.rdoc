@@ -1,6 +1,26 @@
 = bullhorn
 
-Description goes here.
+The Rack middleware drop-in for the bullhorn exception notification application.
+
+See http://bullhorn.it and signup for a free account!
+
+== Sinatra Example
+  
+    require 'rubygems'
+    require 'sinatra'
+    
+    # this must be enabled for errors to propagate
+    set :raise_errors, true 
+
+    use Bullhorn, :api_key => "__your key here__"
+
+    get "/hello" do
+      "Hello world"
+    end
+
+    get "/fail" do
+      raise "Failure from the app"
+    end
 
 == Note on Patches/Pull Requests
  
