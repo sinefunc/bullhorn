@@ -15,7 +15,7 @@ class Bullhorn
         :request_body => serialize(whitelist(request_body(env)))
       })
     end
-  
+
   protected
     def request_body(env)
       if io = env['rack.input']
@@ -25,7 +25,7 @@ class Bullhorn
     rescue
       ""
     end
-    
+
     def whitelist(str_or_hash)
       case str_or_hash
       when Hash
@@ -47,7 +47,7 @@ class Bullhorn
     def sanitize(str)
       str.dup.tap do |ret|
         @filters.each do |filter|
-          ret.gsub!(Regexp.new(FILTERING % filter)) { |m| 
+          ret.gsub!(Regexp.new(FILTERING % filter)) { |m|
             m.gsub($1, '[FILTERED]')
           }
         end

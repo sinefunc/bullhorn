@@ -5,12 +5,12 @@ The Rack middleware drop-in for the bullhorn exception notification application.
 See http://bullhorn.it and signup for a free account!
 
 == Sinatra Example
-  
+
     require 'rubygems'
     require 'sinatra'
-    
+
     # this must be enabled for errors to propagate
-    set :raise_errors, true 
+    set :raise_errors, true
 
     use Bullhorn, :api_key => "__your key here__"
 
@@ -23,7 +23,7 @@ See http://bullhorn.it and signup for a free account!
     end
 
 == Note on Patches/Pull Requests
- 
+
 * Fork the project.
 * Make your feature addition or bug fix.
 * Add tests for it. This is important so I don't break it in a

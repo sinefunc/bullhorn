@@ -10,7 +10,7 @@ class RescueAction
 
 protected
   def rescue_action_in_public(ex)
-    raise ex    
+    raise ex
   end
 end
 
@@ -18,15 +18,15 @@ class FakeRailsController < RescueAction
   Fail = Class.new(StandardError)
 
   include Bullhorn::Plugin
-  
+
   attr :request
 
   def initialize(request, response)
-    @request, @response = request, response  
+    @request, @response = request, response
   end
 
   def index
-    raise Fail, "Failure"  
+    raise Fail, "Failure"
   rescue => ex
     rescue_action_in_public(ex)
   end

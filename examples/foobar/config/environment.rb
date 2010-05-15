@@ -23,7 +23,7 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   #
-  # Normally you would do this, but since we're requiring the app 
+  # Normally you would do this, but since we're requiring the app
   # manually, we don't need it
   # config.gem "bullhorn"
 

@@ -17,7 +17,7 @@ class Bullhorn
   attr :filters
   attr :api_key
   attr :url
-  
+
   include Sender
 
   def initialize(app, options = {})
@@ -35,8 +35,7 @@ class Bullhorn
         notify ex, env
         raise ex
       end
-    
+
     [status, headers, body]
   end
 end
-

@@ -5,7 +5,7 @@ class Bullhorn
 
       attr :ignored_exceptions
     end
-    
+
     def self.ignored_exceptions
       [].tap do |ex|
         ex << ActiveRecord::RecordNotFound if defined? ActiveRecord

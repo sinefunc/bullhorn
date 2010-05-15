@@ -1,5 +1,3 @@
-
-
 Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 23:14:13) [GET]
 
 RuntimeError (Error From Raiser):

@@ -4,7 +4,7 @@ class TestBullhorn < Test::Unit::TestCase
   setup do
     @app = lambda { |env| [200, { "Content-Type" => "text/plain" }, ["Hello"]] }
   end
-  
+
   test "raises when no api_key" do
     assert_raise ArgumentError do
       Bullhorn.new(@app)
@@ -35,7 +35,7 @@ class TestBullhorn < Test::Unit::TestCase
 
     should "send a notification and raise the failure" do
       @bullhorn.expects(:notify)
-      
+
       assert_raise Fail do
         @bullhorn.call({})
       end
@@ -43,8 +43,8 @@ class TestBullhorn < Test::Unit::TestCase
 
     should "send the proper request parameters" do
       uri = URI("http://test.host/api/v1")
-      io  = stub("IO", :read => "FooBar") 
-      
+      io  = stub("IO", :read => "FooBar")
+
       expected = {
         :api_key => '_key_',
         :message => 'Fail!!!',
@@ -53,7 +53,7 @@ class TestBullhorn < Test::Unit::TestCase
         :request_body => Bullhorn::Sender.serialize("FooBar")
       }
 
-      Net::HTTP.expects(:post_form).with() { |u, hash| 
+      Net::HTTP.expects(:post_form).with() { |u, hash|
         u == uri && hash == expected
       }
 
@@ -63,7 +63,7 @@ class TestBullhorn < Test::Unit::TestCase
       end
     end
   end
-  
+
   context "given filtering password / password_confirmation" do
     Fail = Class.new(StandardError)
 
@@ -79,8 +79,8 @@ class TestBullhorn < Test::Unit::TestCase
 
     should "remove all traces of password param value in the env" do
       uri = URI("http://test.host/api/v1")
-      io  = stub("IO", :read => "password=test&user[password]=test") 
-      
+      io  = stub("IO", :read => "password=test&user[password]=test")
+
       expected = {
         :api_key => '_key_',
         :message => 'Fail!!!',
@@ -89,16 +89,16 @@ class TestBullhorn < Test::Unit::TestCase
                                            "rack.input" => io.inspect),
         :request_body => Bullhorn::Sender.serialize("password=[FILTERED]&user[password]=[FILTERED]")
       }
-      
+
       Net::HTTP.expects(:post_form).with() { |u, hash|
         u == uri && hash == expected
       }
 
       begin
-        @bullhorn.call("params" => "password=test&user[password]=test", 
+        @bullhorn.call("params" => "password=test&user[password]=test",
                        "rack.input" =>  io)
       rescue Fail
       end
-    end    
+    end
   end
 end
