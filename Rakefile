@@ -5,12 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "bullhorn"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{TODO: rack middleware client for bullhorn.it}
+    gem.description = %Q{TODO: drop in rack middleware for bullhorn.it}
     gem.email = "cyx.ucron@gmail.com"
-    gem.homepage = "http://github.com/cyx/bullhorn"
+    gem.homepage = "http://github.com/sinefunc/bullhorn"
     gem.authors = ["Cyril David"]
     gem.add_development_dependency "contest", ">= 0"
+    gem.add_development_dependency "mocha", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
