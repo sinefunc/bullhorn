@@ -1,0 +1,532 @@
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 20:38:51) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:3:in `index'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (75.2ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 20:39:30) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:3:in `index'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (74.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 20:39:32) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:3:in `index'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (72.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 20:39:32) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:3:in `index'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (48.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:50:43) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 21:50:43) [GET]
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (65.9ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:51:33) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 21:51:33) [GET]
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (66.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:51:35) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 21:51:35) [GET]
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (39.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:51:36) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 21:51:36) [GET]
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (64.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:51:36) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 21:51:36) [GET]
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (63.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:51:36) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 21:51:36) [GET]
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (63.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:51:37) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 21:51:37) [GET]
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:51:37) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 21:51:37) [GET]
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (39.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:51:38) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 21:51:38) [GET]
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (64.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:51:54) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 21:51:54) [GET]
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (67.2ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:51:55) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 21:51:55) [GET]
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (38.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:51:56) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 21:51:56) [GET]
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (64.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:52:17) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:3:in `index'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (76.0ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:52:18) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:3:in `index'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (73.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:53:30) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:3:in `index'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (75.9ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:53:37) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:3:in `index'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:32:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (74.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:55:55) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:3:in `index'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:34:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:34:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (77.8ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:56:02) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:3:in `index'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:34:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:34:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (79.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:56:05) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:3:in `index'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:34:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:34:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (51.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:57:05) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:3:in `index'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:34:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:34:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (60.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:57:06) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:3:in `index'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:34:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:34:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (52.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:57:07) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:3:in `index'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:34:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:34:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (80.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:57:07) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:3:in `index'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:34:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:34:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (81.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:57:08) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:3:in `index'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:34:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:34:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (86.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 21:59:48) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 21:59:48) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:3:in `index'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:34:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:34:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (79.6ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 22:00:09) [GET]
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 22:40:37) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 22:40:47) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:3:in `index'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:34:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:34:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (71.2ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 22:46:49) [GET]
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 23:13:11) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:5:in `index'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:33:in `call'
+  /users/cyx/Labs/bullhorn/lib/bullhorn.rb:33:in `call'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (74.9ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)

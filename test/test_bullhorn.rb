@@ -48,9 +48,9 @@ class TestBullhorn < Test::Unit::TestCase
       expected = {
         :api_key => '_key_',
         :message => 'Fail!!!',
-        :backtrace => Bullhorn.serialize(['line1', 'line2']),
-        :env => Bullhorn.serialize("params" => "a&b", "rack.input" => io),
-        :request_body => Bullhorn.serialize("FooBar")
+        :backtrace => Bullhorn::Sender.serialize(['line1', 'line2']),
+        :env => Bullhorn::Sender.serialize("params" => "a&b", "rack.input" => io.inspect),
+        :request_body => Bullhorn::Sender.serialize("FooBar")
       }
 
       Net::HTTP.expects(:post_form).with() { |u, hash| 
@@ -84,19 +84,19 @@ class TestBullhorn < Test::Unit::TestCase
       expected = {
         :api_key => '_key_',
         :message => 'Fail!!!',
-        :backtrace => Bullhorn.serialize(['line1', 'line2']),
-        :env => Bullhorn.serialize("params" => "password=[FILTERED]&user[password]=[FILTERED]",
-                                   "rack.input" => io),
-        :request_body => Bullhorn.serialize("password=[FILTERED]&user[password]=[FILTERED]")
+        :backtrace => Bullhorn::Sender.serialize(['line1', 'line2']),
+        :env => Bullhorn::Sender.serialize("params" => "password=[FILTERED]&user[password]=[FILTERED]",
+                                           "rack.input" => io.inspect),
+        :request_body => Bullhorn::Sender.serialize("password=[FILTERED]&user[password]=[FILTERED]")
       }
       
-      Net::HTTP.expects(:post_form).with() { |u, hash| 
+      Net::HTTP.expects(:post_form).with() { |u, hash|
         u == uri && hash == expected
       }
 
       begin
-        @bullhorn.call({ "params" => "password=test&user[password]=test", 
-                         "rack.input" =>  io })
+        @bullhorn.call("params" => "password=test&user[password]=test", 
+                       "rack.input" =>  io)
       rescue Fail
       end
     end    

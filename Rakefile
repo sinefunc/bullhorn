@@ -12,6 +12,8 @@ begin
     gem.authors = ["Cyril David"]
     gem.add_development_dependency "contest", ">= 0"
     gem.add_development_dependency "mocha", ">= 0"
+    gem.add_development_dependency "rack-test", ">= 0"
+    gem.add_development_dependency "fakeweb", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

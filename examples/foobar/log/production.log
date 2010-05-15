@@ -1,0 +1,143 @@
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 23:14:13) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:5:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 23:14:14) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:5:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 23:15:14) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 23:15:14) [GET]
+
+IOError (not opened for reading):
+  /users/cyx/Labs/bullhorn/lib/bullhorn/sender.rb:6:in `serialize'
+  /users/cyx/Labs/bullhorn/lib/bullhorn/sender.rb:14:in `notify'
+  /users/cyx/Labs/bullhorn/lib/bullhorn/plugin.rb:10:in `rescue_action'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 23:18:26) [GET]
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 23:18:48) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 23:18:48) [GET]
+
+IOError (not opened for reading):
+  /users/cyx/Labs/bullhorn/lib/bullhorn/sender.rb:6:in `serialize'
+  /users/cyx/Labs/bullhorn/lib/bullhorn/sender.rb:14:in `notify'
+  /users/cyx/Labs/bullhorn/lib/bullhorn/plugin.rb:10:in `rescue_action'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 23:20:05) [GET]
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-15 23:27:39) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-15 23:27:39) [GET]
+
+NameError (uninitialized constant Bullhorn::Plugin::ActiveRecord):
+  /users/cyx/Labs/bullhorn/lib/bullhorn/plugin.rb:10:in `ignored_exceptions'
+  /users/cyx/Labs/bullhorn/lib/bullhorn/plugin.rb:21:in `rescue_action'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-16 03:18:38) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:5:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-16 03:19:35) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-16 03:19:35) [GET]
+
+NameError (undefined local variable or method `ignored_exceptions' for #<RaiserController:0x0000010179ad30>):
+  /users/cyx/Labs/bullhorn/lib/bullhorn/plugin.rb:20:in `rescue_action'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-16 03:19:53) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:5:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-16 03:19:53) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:5:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RaiserController#index (for 127.0.0.1 at 2010-05-16 03:19:58) [GET]
+
+RuntimeError (Error From Raiser):
+  app/controllers/raiser_controller.rb:5:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /Users/cyx/.rvm/rubies/ruby-1.9.1-p378/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
