@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{bullhorn}
-  s.version = "0.0.2"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Cyril David"]
-  s.date = %q{2010-05-16}
+  s.date = %q{2010-05-17}
   s.description = %q{drop in rack middleware for bullhorn.it}
   s.email = %q{cyx.ucron@gmail.com}
   s.extra_rdoc_files = [
@@ -81,7 +81,8 @@ Gem::Specification.new do |s|
      "lib/bullhorn/sender.rb",
      "test/helper.rb",
      "test/test_bullhorn.rb",
-     "test/test_bullhorn_plugin.rb"
+     "test/test_bullhorn_plugin.rb",
+     "test/test_ignore_exceptions.rb"
   ]
   s.homepage = %q{http://github.com/sinefunc/bullhorn}
   s.rdoc_options = ["--charset=UTF-8"]
@@ -92,6 +93,7 @@ Gem::Specification.new do |s|
     "test/helper.rb",
      "test/test_bullhorn.rb",
      "test/test_bullhorn_plugin.rb",
+     "test/test_ignore_exceptions.rb",
      "examples/foobar/app/controllers/application_controller.rb",
      "examples/foobar/app/controllers/raiser_controller.rb",
      "examples/foobar/app/helpers/application_helper.rb",
@@ -137,3 +139,4 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<fakeweb>, [">= 0"])
   end
 end
+
