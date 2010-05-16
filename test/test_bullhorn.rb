@@ -103,4 +103,83 @@ class TestBullhorn < Test::Unit::TestCase
       end
     end
   end
+
+  context "given ignore_exceptions" do
+    IgnoredError = Class.new(StandardError)
+    RaisedError  = Class.new(StandardError)
+
+    setup do
+      @app = lambda { |env| raise IgnoredError, "Ignored!" }
+
+      @bullhorn = Bullhorn.new(@app, :api_key => "_key_",
+                                     :ignore_exceptions => [IgnoredError])
+
+      FakeWeb.allow_net_connect = false
+    end
+
+    should "not notify the server of the exception" do
+      assert_raise IgnoredError do
+        @bullhorn.call({})
+      end
+    end
+
+    should "notify when raising RaisedError" do
+      @app = lambda { |env| raise RaisedError, "Raised!" }
+
+      @bullhorn = Bullhorn.new(@app, :api_key => "_key_",
+                                     :ignore_exceptions => [IgnoredError])
+
+      assert_raise RaisedError, FakeWeb::NetConnectNotAllowedError do
+        @bullhorn.call({})
+      end
+    end
+  end
+
+  context "when ActiveRecord exists" do
+    module ::ActiveRecord
+      RecordNotFound = Class.new(StandardError)
+    end
+
+    teardown do
+      Object.send :remove_const, :ActiveRecord
+    end
+
+    should "include it in the default ignore_exceptions by default" do
+      bullhorn = Bullhorn.new(lambda {}, :api_key => "_key")
+
+      assert bullhorn.ignore_exceptions.include?(ActiveRecord::RecordNotFound)
+    end
+  end
+
+  context "when AbstractController exists" do
+    module ::AbstractController
+      ActionNotFound = Class.new(StandardError)
+    end
+
+    teardown do
+      Object.send :remove_const, :AbstractController
+    end
+
+    should "include it in the default ignore_exceptions" do
+      bh = Bullhorn.new(lambda {}, :api_key => "_key")
+
+      assert bh.ignore_exceptions.include?(AbstractController::ActionNotFound)
+    end
+  end
+
+  context "when ActionController exists" do
+    module ::ActionController
+      RoutingError = Class.new(StandardError)
+    end
+
+    teardown do
+      Object.send :remove_const, :ActionController
+    end
+
+    should "include it in the default ignored_exceptions" do
+      bh = Bullhorn.new(lambda {}, :api_key => "_key")
+
+      assert bh.ignore_exceptions.include?(ActionController::RoutingError)
+    end
+  end
 end

@@ -33,7 +33,7 @@ See http://bullhorn.it and signup for a free account!
       :filters => %w(password password_confirmation credit_card)
 
 == Rails 2.3.5 backward compatibility
-    
+
     # in config/environment.rb
 
     config.gem 'bullhorn'

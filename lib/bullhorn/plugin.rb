@@ -25,7 +25,7 @@ class Bullhorn
     end
 
     def notify_with_bullhorn!(exception)
-      unless Bullhorn::Plugin.ignored_exceptions.include?(exception)
+      unless Bullhorn::Plugin.ignored_exceptions.include?(exception.class)
         bullhorn = Bullhorn.new(self, Bullhorn::Plugin.options)
         bullhorn.notify(exception, request.env)
       end

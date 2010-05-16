@@ -56,7 +56,7 @@ class Bullhorn
     end
 
     def sha1(exception)
-      Digest::SHA1.hexdigest(exception.message + exception.backtrace.inspect) 
+      Digest::SHA1.hexdigest(exception.message + exception.backtrace.inspect)
     end
   end
 end
