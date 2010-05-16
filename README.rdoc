@@ -14,9 +14,13 @@ See http://bullhorn.it and signup for a free account!
 
     # of course the best way to do that is:
     set :raise_errors, production?
+  
+    # Let's say we have an error we don't want to be notified about
+    MyOwnError = Class.new(StandardError)
 
     use Bullhorn, :api_key => "__your key here__",
-      :filters => %w(password password_confirmation)
+      :filters => %w(password password_confirmation),
+      :ignore_exceptions => [MyOwnError]
 
     get "/hello" do
       "Hello world"
@@ -26,11 +30,16 @@ See http://bullhorn.it and signup for a free account!
       raise "Failure from the app"
     end
 
+
 == Rails 3 Example
 
     Whatever::Application.config.middleware.use Bullhorn,
       :api_key => "_your api key here_",
       :filters => %w(password password_confirmation credit_card)
+    
+    # by default, ActiveRecord::RecordNotFound, 
+    # AbstractController::ActionNotFound and ActionController::RoutingError
+    # are ignored in a Rails 3 context.
 
 == Rails 2.3.5 backward compatibility
 
