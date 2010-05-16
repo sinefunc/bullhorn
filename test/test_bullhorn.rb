@@ -50,7 +50,8 @@ class TestBullhorn < Test::Unit::TestCase
         :message => 'Fail!!!',
         :backtrace => Bullhorn::Sender.serialize(['line1', 'line2']),
         :env => Bullhorn::Sender.serialize("params" => "a&b", "rack.input" => io.inspect),
-        :request_body => Bullhorn::Sender.serialize("FooBar")
+        :request_body => Bullhorn::Sender.serialize("FooBar"),
+        :sha1 => Digest::SHA1.hexdigest("Fail!!!" + ['line1', 'line2'].inspect)
       }
 
       Net::HTTP.expects(:post_form).with() { |u, hash|
@@ -87,7 +88,8 @@ class TestBullhorn < Test::Unit::TestCase
         :backtrace => Bullhorn::Sender.serialize(['line1', 'line2']),
         :env => Bullhorn::Sender.serialize("params" => "password=[FILTERED]&user[password]=[FILTERED]",
                                            "rack.input" => io.inspect),
-        :request_body => Bullhorn::Sender.serialize("password=[FILTERED]&user[password]=[FILTERED]")
+        :request_body => Bullhorn::Sender.serialize("password=[FILTERED]&user[password]=[FILTERED]"),
+        :sha1 => Digest::SHA1.hexdigest("Fail!!!" + ['line1', 'line2'].inspect)
       }
 
       Net::HTTP.expects(:post_form).with() { |u, hash|

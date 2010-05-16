@@ -3,7 +3,7 @@ class Bullhorn
     extend self
 
     def serialize(str)
-      str # CGI.escape(Base64.encode64(str.to_json).strip)
+      CGI.escape(Base64.encode64(str.to_json).strip)
     end
 
     def notify(exception, env)
@@ -12,7 +12,8 @@ class Bullhorn
         :message      => exception.message,
         :backtrace    => serialize(exception.backtrace),
         :env          => serialize(whitelist(env)),
-        :request_body => serialize(whitelist(request_body(env)))
+        :request_body => serialize(whitelist(request_body(env))),
+        :sha1         => sha1(exception)
       })
     end
 
@@ -52,6 +53,10 @@ class Bullhorn
           }
         end
       end
+    end
+
+    def sha1(exception)
+      Digest::SHA1.hexdigest(exception.message + exception.backtrace.inspect) 
     end
   end
 end

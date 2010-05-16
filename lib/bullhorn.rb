@@ -3,6 +3,7 @@ require 'uri'
 require 'base64'
 require 'json'
 require 'cgi'
+require 'digest/sha1'
 
 class Bullhorn
   autoload :Plugin, "bullhorn/plugin"
