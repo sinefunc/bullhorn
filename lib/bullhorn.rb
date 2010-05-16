@@ -9,7 +9,7 @@ class Bullhorn
   autoload :Plugin, "bullhorn/plugin"
   autoload :Sender, "bullhorn/sender"
 
-  VERSION = "0.0.1"
+  VERSION = "0.0.2"
 
   URL = "http://bullhorn.it/api/v1/exception"
 
