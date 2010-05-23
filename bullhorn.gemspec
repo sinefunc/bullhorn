@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{bullhorn}
-  s.version = "0.0.3"
+  s.version = "0.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Cyril David"]
-  s.date = %q{2010-05-17}
+  s.date = %q{2010-05-23}
   s.description = %q{drop in rack middleware for bullhorn.it}
   s.email = %q{cyx.ucron@gmail.com}
   s.extra_rdoc_files = [
@@ -76,6 +76,7 @@ Gem::Specification.new do |s|
      "examples/foobar/test/performance/browsing_test.rb",
      "examples/foobar/test/test_helper.rb",
      "examples/foobar/test/unit/helpers/raiser_helper_test.rb",
+     "examples/sinatra.rb",
      "lib/bullhorn.rb",
      "lib/bullhorn/plugin.rb",
      "lib/bullhorn/sender.rb",
@@ -114,7 +115,8 @@ Gem::Specification.new do |s|
      "examples/foobar/test/functional/raiser_controller_test.rb",
      "examples/foobar/test/performance/browsing_test.rb",
      "examples/foobar/test/test_helper.rb",
-     "examples/foobar/test/unit/helpers/raiser_helper_test.rb"
+     "examples/foobar/test/unit/helpers/raiser_helper_test.rb",
+     "examples/sinatra.rb"
   ]
 
   if s.respond_to? :specification_version then
