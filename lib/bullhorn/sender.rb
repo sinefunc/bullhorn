@@ -3,7 +3,7 @@ class Bullhorn
     extend self
 
     def serialize(str)
-      CGI.escape(Base64.encode64(str.to_json).strip)
+      Base64.encode64(str.to_json).strip
     end
 
     def notify(exception, env)
@@ -23,6 +23,7 @@ class Bullhorn
         io.rewind if io.respond_to?(:rewind)
         io.read
       end
+    # TODO : only rescue the expected exceptions
     rescue
       ""
     end
