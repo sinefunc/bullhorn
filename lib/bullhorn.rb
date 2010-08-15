@@ -9,9 +9,9 @@ class Bullhorn
   autoload :Plugin, "bullhorn/plugin"
   autoload :Sender, "bullhorn/sender"
 
-  VERSION = "0.0.2"
+  VERSION = "0.0.5"
 
-  URL = "http://bullhorn.it/api/v1/exception"
+  URL = "http://www.bullhorn.it/api/v1/exception"
 
   FILTERING = %(['"]?\[?%s\]?['"]?=>?([^&\s]*))
 
