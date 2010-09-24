@@ -1,8 +1,12 @@
 class Bullhorn
   class Backtrace
-    def initialize(exception)
+    def initialize(exception, options = {})
       @exception = exception
       @raw       = exception.backtrace # Array
+      @options   = { :context => true }
+
+      @options.merge!(options)
+      
       # Sample:
       # [ "(irb):3:in `irb_binding'",
       #   "/Users/rsc/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/irb/workspace.rb:80:in `eval'",
@@ -30,7 +34,7 @@ class Bullhorn
         arr << { :function => m[:function],
           :file     => m[:file],
           :line     => m[:line],
-          :context  => get_context(m[:file], m[:line])
+          :context  => (@options[:context] ? get_context(m[:file], m[:line]) : nil)
         }
         arr
       end

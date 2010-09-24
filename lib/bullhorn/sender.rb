@@ -7,7 +7,7 @@ class Bullhorn
     end
 
     def notify(exception, env)
-      bt = Backtrace.new(exception)
+      bt = Backtrace.new(exception, :context => @show_code_context)
 
       Net::HTTP.post_form(URI(url), {
         :api_key      => api_key,

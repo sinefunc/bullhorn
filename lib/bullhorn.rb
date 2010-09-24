@@ -22,6 +22,7 @@ class Bullhorn
   attr :api_key
   attr :url
   attr :ignore_exceptions
+  attr :show_code_context
 
   include Sender
 
@@ -31,6 +32,7 @@ class Bullhorn
     @filters           = Array(options[:filters])
     @url               = options[:url] || URL
     @ignore_exceptions = Array(options[:ignore_exceptions] || default_ignore_exceptions)
+    @show_code_context = (options[:show_code_context].nil? ? true : options[:show_code_context])
   end
 
   def call(env)
