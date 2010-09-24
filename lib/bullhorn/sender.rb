@@ -8,7 +8,6 @@ class Bullhorn
 
     def notify(exception, env)
       bt = Backtrace.new(exception)
-      puts bt.to_a.inspect
 
       Net::HTTP.post_form(URI(url), {
         :api_key      => api_key,
@@ -21,7 +20,7 @@ class Bullhorn
         :language       => Bullhorn::LANGUAGE,
         :client_name    => Bullhorn::CLIENT_NAME,
         :client_version => Bullhorn::VERSION,
-        :url            => "http://%s%s" % [ env['HTTP_HOST'], env['REQUEST_URI'] ],
+        :url            => [ "http://", env['HTTP_HOST'], env['REQUEST_URI'] ].join(''),
         :class          => exception.class.to_s
       })
     end

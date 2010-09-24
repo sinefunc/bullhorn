@@ -17,7 +17,7 @@ class Bullhorn
       begin
         line = line.to_i
         from = [0, (line-size-1)].max
-        lines = File.open(fname, 'r') { |file| file.lines.to_a[from..(line+size)] }
+        lines = File.open(fname, 'r') { |file| file.lines.to_a[from...(line+size)] }
 
         i = [line - size, 0].max
         lines.map { |hash| i += 1; { (i-1) => hash } }
