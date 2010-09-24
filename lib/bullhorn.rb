@@ -8,7 +8,10 @@ require 'digest/sha1'
 class Bullhorn
   autoload :Plugin, "bullhorn/plugin"
   autoload :Sender, "bullhorn/sender"
+  autoload :Backtrace, "bullhorn/backtrace"
 
+  LANGUAGE    = "ruby"
+  CLIENT_NAME = "bullhorn-ruby"
   VERSION = "0.0.5"
 
   URL = "http://www.bullhorn.it/api/v1/exception"

@@ -7,13 +7,21 @@ class Bullhorn
     end
 
     def notify(exception, env)
+      bt = Backtrace.new(exception)
+
       Net::HTTP.post_form(URI(url), {
         :api_key      => api_key,
         :message      => exception.message,
-        :backtrace    => serialize(exception.backtrace),
+        :backtrace    => serialize(bt.to_a),
         :env          => serialize(whitelist(env)),
         :request_body => serialize(whitelist(request_body(env))),
-        :sha1         => sha1(exception)
+        :sha1         => sha1(exception),
+        # APIv2
+        :language       => Bullhorn::CLIENT_LANGUAGE,
+        :client_name    => Bullhorn::CLIENT_NAME,
+        :client_version => Bullhorn::VERSION,
+        :url            => 'TODO',
+        :class          => exception.class.to_s
       })
     end
 
