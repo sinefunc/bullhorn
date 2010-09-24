@@ -26,6 +26,14 @@ class Bullhorn
     end
 
   protected
+    def sha1(exception)
+      # Treat 2 exceptions as the same if they match the same exception class
+      # and same origin.
+      salt = '#bh#' + Bullhorn::CLIENT_NAME
+      str  = [ salt, exception.class.to_s, exception.backtrace.first ].join('|')
+      Digest::SHA1.hexdigest(str)
+    end
+
     def request_body(env)
       if io = env['rack.input']
         io.rewind if io.respond_to?(:rewind)
@@ -62,10 +70,6 @@ class Bullhorn
           }
         end
       end
-    end
-
-    def sha1(exception)
-      Digest::SHA1.hexdigest(exception.message + exception.backtrace.inspect)
     end
   end
 end
