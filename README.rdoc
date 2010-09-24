@@ -2,72 +2,10 @@
 
 The Rack middleware drop-in for the bullhorn exception notification application.
 
-See http://bullhorn.it and signup for a free account!
+See http://www.bullhorn.it and signup for a free account!
 
-== Sinatra Example
-
-    require 'rubygems'
-    require 'sinatra'
-
-    # this must be enabled for errors to propagate
-    set :raise_errors, true
-
-    # of course the best way to do that is:
-    set :raise_errors, production?
-  
-    # Let's say we have an error we don't want to be notified about
-    MyOwnError = Class.new(StandardError)
-
-    use Bullhorn, :api_key => "__your key here__",
-      :filters => %w(password password_confirmation),
-      :ignore_exceptions => [MyOwnError]
-
-    get "/hello" do
-      "Hello world"
-    end
-
-    get "/fail" do
-      raise "Failure from the app"
-    end
-
-
-== Rails 3 Example
-
-    Whatever::Application.config.middleware.use Bullhorn,
-      :api_key => "_your api key here_",
-      :filters => %w(password password_confirmation credit_card)
-    
-    # by default, ActiveRecord::RecordNotFound, 
-    # AbstractController::ActionNotFound and ActionController::RoutingError
-    # are ignored in a Rails 3 context.
-
-== Rails 2.3.5 backward compatibility
-
-    # in config/environment.rb
-
-    config.gem 'bullhorn'
-
-    # in config/initializers/bullhorn.rb
-    Bullhorn::Plugin.options = {
-      :api_key => "_api key here_",
-      :filters => %w(password password_confirmation credit_card)
-    }
-
-    # in your application controller
-    class ApplicationController < ActionController::Base
-      include Bullhorn::Plugin
-    end
-
-== Note on Patches/Pull Requests
-
-* Fork the project.
-* Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
+Installing instructions: http://www.bullhorn.it/page/installation
 
 == Copyright
 
-Copyright (c) 2010 Cyril David. See LICENSE for details.
+Copyright (c) 2010 Cyril David, Rico Sta. Cruz and Sinefunc, Inc. Released under the MIT license.
