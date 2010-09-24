@@ -1,5 +1,5 @@
 class Bullhorn
-  module Backtrace
+  class Backtrace
     def initialize(exception)
       @exception = exception
       @raw       = exception.backtrace # Array
@@ -15,8 +15,12 @@ class Bullhorn
     # Returns nil or an array.
     def get_context(fname, line, size = 2)
       begin
-        from = [0, (line-size)].max
-        File.open(fname, 'r') { |file| file.lines.to_a[from..(line+size)] }
+        line = line.to_i
+        from = [0, (line-size-1)].max
+        lines = File.open(fname, 'r') { |file| file.lines.to_a[from..(line+size)] }
+
+        i = [line - size, 0].max
+        lines.map { |hash| i += 1; { (i-1) => hash } }
       rescue
         nil
       end
@@ -26,11 +30,12 @@ class Bullhorn
       @raw.inject([]) do |arr, line|
         m = line.match(/^(?<file>[^:]+):(?<line>[0-9]+):in `(?<function>.*)'$/)
 
-        { :function => m[:function],
+        arr << { :function => m[:function],
           :file     => m[:file],
           :line     => m[:line],
           :context  => get_context(m[:file], m[:line])
         }
+        arr
       end
     end
 
