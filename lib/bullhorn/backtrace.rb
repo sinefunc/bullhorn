@@ -6,10 +6,7 @@ class Bullhorn
       # Sample:
       # [ "(irb):3:in `irb_binding'",
       #   "/Users/rsc/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/irb/workspace.rb:80:in `eval'",
-      #   "/Users/rsc/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/irb/workspace.rb:80:in `evaluate'",
-      #   "/Users/rsc/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/irb/context.rb:254:in `evaluate'",
       #   "/Users/rsc/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/irb.rb:159:in `block (2 levels) in eval_input'",
-      #   "/Users/rsc/.rvm/rubies/ruby-1.9.2-p0/lib/ruby/1.9.1/irb.rb:273:in `signal_status'",
     end
 
     # Returns nil or an array.
