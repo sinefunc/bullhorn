@@ -12,9 +12,9 @@ class Bullhorn
 
   LANGUAGE    = "ruby"
   CLIENT_NAME = "bullhorn-ruby"
-  VERSION = "0.0.5"
+  VERSION = "0.1.0"
 
-  URL = "http://www.bullhorn.it/api/v1/exception"
+  URL = "http://www.bullhorn.it/api/v2/exception"
 
   FILTERING = %(['"]?\[?%s\]?['"]?=>?([^&\s]*))
 

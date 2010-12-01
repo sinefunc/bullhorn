@@ -1,0 +1,9 @@
+v0.1.1
+------
+
+- Fix the wrong URL being submitted to.
+
+v0.1.0
+------
+
+- Use apiv2 which allows for backtraces to be sent.
