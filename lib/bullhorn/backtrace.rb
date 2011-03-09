@@ -1,4 +1,3 @@
-require 'ruby-debug'
 class Bullhorn
   class Backtrace
     def initialize(exception, options = {})
