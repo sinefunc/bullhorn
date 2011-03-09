@@ -1,3 +1,4 @@
+require 'ruby-debug'
 class Bullhorn
   class Backtrace
     def initialize(exception, options = {})
@@ -29,8 +30,7 @@ class Bullhorn
 
     def to_a
       @raw.inject([]) do |arr, line|
-        m = line.match(/^(?<file>[^:]+):(?<line>[0-9]+):in `(?<function>.*)'$/)
-
+        m = line.match(/^(?<file>.+):(?<line>[0-9]+):in `(?<function>.*)'$/)
         arr << { :function => m[:function],
           :file     => m[:file],
           :line     => m[:line],
