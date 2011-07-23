@@ -6,7 +6,7 @@ class Bullhorn
       Base64.encode64(str.to_json).strip
     end
 
-    def notify(exception, env)
+    def notify(exception, env = {})
       bt = Backtrace.new(exception, :context => @show_code_context)
 
       Net::HTTP.post_form(URI(url), {
